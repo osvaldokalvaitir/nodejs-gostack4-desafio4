@@ -10,7 +10,7 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
-xAplicação usando Node.js, AdonisJs, ESLint, Moment, Raven-node, Mailtrap e Sentry.
+Aplicação usando Node.js, AdonisJs, ESLint, Moment, Raven-node, Mailtrap e Sentry.
 
 ## Desafio 4
 
@@ -64,37 +64,37 @@ No desafio final você criará uma API REST com AdonisJS para um sistema de agen
 
 x- Projetos
 
-  - Lista todos os projetos
-  - Adiciona novos projetos
-  - Lista somente dados de um projeto
-  - Edita dados de projetos existentes
-  - Exclui projetos existentes
+- Lista todos os projetos
+- Adiciona novos projetos
+- Lista somente dados de um projeto
+- Edita dados de projetos existentes
+- Exclui projetos existentes
 
 x- Tarefas
 
-  - Lista todas as tarefas de um projeto
-  - Adiciona novas tarefas em um projeto
-  - Lista somente dados de uma tarefa de um projeto
-  - Edita dados de uma tarefa de um projeto
-  - Exclui uma tarefa de um projeto
+- Lista todas as tarefas de um projeto
+- Adiciona novas tarefas em um projeto
+- Lista somente dados de uma tarefa de um projeto
+- Edita dados de uma tarefa de um projeto
+- Exclui uma tarefa de um projeto
 
 x- Arquivos
 
-  - Lista um arquivo
-  - Adiciona novos arquivos
+- Lista um arquivo
+- Adiciona novos arquivos
 
 x- Redefinição de Senha
 
-  - Requisita nova senha
-  - Adiciona nova senha
+- Requisita nova senha
+- Adiciona nova senha
 
 x- Sessões
 
-  - Adiciona novas sessões
+- Adiciona novas sessões
 
 x- Usuários
 
-  - Adiciona novos usuários
+- Adiciona novos usuários
 
 ## Desenvolvimento
 
@@ -116,27 +116,29 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 ### Execução de Ouvinte de Fila
 
-xClique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga a Execução de Ouvinte de Fila.
+Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga a Execução de Ouvinte de Fila.
 
 ### Bibliotecas
 
-x- [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
+- [Adonis Antl](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-antl.md)
 
-x- [Adonis Mail](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-mail.md)
+- [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
 
-x- [Adonis Validator](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-validator.md)
+- [Adonis Mail](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-mail.md)
+
+- [Adonis Validator](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-validator.md)
 
 - [AdonisJs Cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md)
 
-x- [AdonisJs Redis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-redis.md)
+- [AdonisJs Redis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-redis.md)
 
 - [ESLint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint.md)
 
-x- [Moment](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/moment.md)
+- [Moment](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/moment.md)
 
 - [pg](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/pg.md)
 
-x- [Raven-node](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/raven.md)
+- [Raven-node](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/raven.md)
 
 ### Outras Ferramentas
 
