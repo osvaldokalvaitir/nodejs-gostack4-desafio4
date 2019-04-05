@@ -62,39 +62,28 @@ No desafio final você criará uma API REST com AdonisJS para um sistema de agen
 
 ## Rotas
 
-x- Projetos
+- Eventos
 
-- Lista todos os projetos
-- Adiciona novos projetos
-- Lista somente dados de um projeto
-- Edita dados de projetos existentes
-- Exclui projetos existentes
+- Lista todos os eventos, podendo filtrar também por data
+- Adiciona novos eventos
+- Lista somente dados de um evento
+- Edita dados de eventos existentes
+- Exclui eventos existentes
+- Compartilha eventos existentes
 
-x- Tarefas
-
-- Lista todas as tarefas de um projeto
-- Adiciona novas tarefas em um projeto
-- Lista somente dados de uma tarefa de um projeto
-- Edita dados de uma tarefa de um projeto
-- Exclui uma tarefa de um projeto
-
-x- Arquivos
-
-- Lista um arquivo
-- Adiciona novos arquivos
-
-x- Redefinição de Senha
+- Redefinição de Senha
 
 - Requisita nova senha
 - Adiciona nova senha
 
-x- Sessões
+- Sessões
 
 - Adiciona novas sessões
 
-x- Usuários
+- Usuários
 
 - Adiciona novos usuários
+- Edita dados de usuários existentes
 
 ## Desenvolvimento
 

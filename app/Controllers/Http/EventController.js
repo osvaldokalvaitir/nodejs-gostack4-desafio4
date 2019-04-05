@@ -22,12 +22,14 @@ class EventController {
     const data = request.only(['name', 'where', 'when'])
 
     try {
-      // Não pode gravar eventos de mesmo usuário, e onde está definindo o usuário?
-      await Event.findByOrFail('when', data.when)
+      await Event.findByOrFail({
+        when: data.when,
+        user_id: auth.user.id
+      })
 
       return response.status(401).send({
         error: {
-          message: 'Não é possível definir dos eventos no mesmo horário.'
+          message: 'Não é possível definir dois eventos no mesmo horário.'
         }
       })
     } catch (err) {
@@ -37,7 +39,7 @@ class EventController {
   }
 
   async show ({ params, response, auth }) {
-    const event = await Event.findByOrFail(params.id)
+    const event = await Event.findOrFail(params.id)
 
     if (event.user_id !== auth.user.id) {
       return response.status(401).send({
@@ -53,7 +55,7 @@ class EventController {
   async update ({ params, request, response, auth }) {
     const event = await Event.findOrFail(params.id)
 
-    if (event.user_id !== auth.user_id) {
+    if (event.user_id !== auth.user.id) {
       return response.status(401).send({
         error: {
           message: 'Apenas o criado do evento pode editá-lo.'
@@ -92,7 +94,7 @@ class EventController {
   }
 
   async destroy ({ params, response, auth }) {
-    const event = await Event.findByOrFail(params.id)
+    const event = await Event.findOrFail(params.id)
 
     if (event.user_id !== auth.user.id) {
       return response.status(401).send({
