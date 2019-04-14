@@ -42,8 +42,6 @@ No desafio final você criará uma API REST com AdonisJS para um sistema de agen
 
 ## Índice
 
-- [Rotas](#rotas)
-
 - [Desenvolvimento](#desenvolvimento)
 
   - [Configurações Iniciais](#configurações-iniciais)
@@ -56,34 +54,13 @@ No desafio final você criará uma API REST com AdonisJS para um sistema de agen
 
   - [Execução do Ouvinte de Fila](#execução-do-ouvinte-de-fila)
 
+- [Utilizados no Projeto](#utilizados-no-projeto)
+
   - [Bibliotecas](#bibliotecas)
 
-  - [Outras Ferramentas](#outras-ferramentas)
-
-## Rotas
-
-- Eventos
-
-  - Lista todos os eventos, podendo filtrar também por data
-  - Adiciona novos eventos
-  - Lista somente dados de um evento
-  - Edita dados de eventos existentes
-  - Exclui eventos existentes
-  - Compartilha eventos existentes
-
-- Redefinição de Senha
-
-  - Requisita nova senha
-  - Adiciona nova senha
-
-- Sessões
-
-  - Adiciona novas sessões
-
-- Usuários
-
-  - Adiciona novos usuários
-  - Edita dados de usuários existentes
+  - [APIs](#apis)
+  
+  - [Ferramentas](#ferramentas)
 
 ## Desenvolvimento
 
@@ -107,6 +84,8 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga a Execução de Ouvinte de Fila.
 
+## Utilizados no Projeto
+
 ### Bibliotecas
 
 - [Adonis Antl](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-antl.md)
@@ -129,7 +108,36 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [Raven-node](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/raven.md)
 
-### Outras Ferramentas
+### APIs
+
+- **Interna**
+
+  - **Rotas**
+
+    - Eventos
+
+      - Lista todos os eventos, podendo filtrar também por data
+      - Adiciona novos eventos
+      - Lista somente dados de um evento
+      - Edita dados de eventos existentes
+      - Exclui eventos existentes
+      - Compartilha eventos existentes
+
+    - Redefinição de Senha
+
+      - Requisita nova senha
+      - Adiciona nova senha
+
+    - Sessões
+
+      - Adiciona novas sessões
+
+    - Usuários
+
+      - Adiciona novos usuários
+      - Edita dados de usuários existentes
+
+### Ferramentas
 
 - [DBeaver](https://github.com/osvaldokalvaitir/projects-settings/blob/master/database/dbeaver.md)
 
