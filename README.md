@@ -47,6 +47,8 @@ No desafio final você criará uma API REST com AdonisJS para um sistema de agen
   - [Configurações Iniciais](#configurações-iniciais)
 
   - [Instalação do Projeto](#instalação-do-projeto)
+  
+  - [Configuração das Variáveis de Ambiente](#configuração-das-variáveis-de-ambiente)
 
   - [Execução do Projeto](#execução-do-projeto)
 
@@ -71,6 +73,10 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 ### Instalação do Projeto
 
 Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga a Instalação de Projeto.
+
+### Configuração das Variáveis de Ambiente
+
+Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/dotenv.md) e siga a Configuração de Variáveis de Ambiente.
 
 ### Execução do Projeto
 
