@@ -1,9 +1,11 @@
 {
-  "name": "adonis-api-app",
+  "name": "nodejs-desafio4",
   "version": "4.1.0",
   "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
   "main": "index.js",
+  "repository": "https://github.com/osvaldokalvaitir/nodejs-desafio4.git",
+  "author": "osvaldokalvaitir <osvaldokalvaitir@outlook.com>",
+  "license": "MIT",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test"
@@ -12,9 +14,6 @@
     "adonisjs",
     "adonis-app"
   ],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": true,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
     "@adonisjs/antl": "^2.0.7",
