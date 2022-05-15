@@ -1,160 +1,71 @@
-# Node.js - Desafio 4
+<h1 align="center">
+    <img src="/.github/assets/logo.png"
+    width="200px"
+    alt="Logo" />
+</h1>
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/osvaldokalvaitir/nodejs-desafio4/blob/master/LICENSE)
-![](https://img.shields.io/github/package-json/v/osvaldokalvaitir/nodejs-desafio4.svg)
-![](https://img.shields.io/github/last-commit/osvaldokalvaitir/nodejs-desafio4.svg?color=red)
-![](https://img.shields.io/github/languages/top/osvaldokalvaitir/nodejs-desafio4.svg?color=yellow)
-![](https://img.shields.io/github/languages/count/osvaldokalvaitir/nodejs-desafio4.svg?color=lightgrey)
-![](https://img.shields.io/github/languages/code-size/osvaldokalvaitir/nodejs-desafio4.svg)
-![](https://img.shields.io/github/repo-size/osvaldokalvaitir/nodejs-desafio4.svg?color=blueviolet)
-[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+<h3 align="center">
+  Node.js - GoStack 4 Challenge 4
+</h3>
 
-Aplicação usando Node.js, AdonisJs, ESLint, Moment, Raven-node, Mailtrap e Sentry.
+<p align="center">
+  :calendar: Application using Node.js, AdonisJs, ESLint, Moment, Raven-node, Insomnia, DBeaver, Docker, Mailtrap and Sentry
+</p>
 
-## Desafio 4
+<p align="center">
+  :muscle: Click <a href="/.github/docs/challenge.md">here</a> to see the challenge description
+</p>
 
-No desafio final você criará uma API REST com AdonisJS para um sistema de agendamentos de compromissos (calendário). Deixe toda estrutura com ESLint, EditorConfig, etc, que configuramos até agora pronta.
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/osvaldokalvaitir/nodejs-gostack4-challenge4.svg?color=00A83A">
 
-### Requisitos funcionais
+  <img alt="GitHub language top" src="https://img.shields.io/github/languages/top/osvaldokalvaitir/nodejs-gostack4-challenge4.svg?color=00A83A">
 
-- O usuário deve poder criar uma conta com nome, e-mail e senha;
-- O usuário deve poder se autenticar na aplicação com e-mail e senha;
-- O usuário deve poder alterar seu nome e senha informando a senha antiga, a senha nova e a confirmação da senha nova;
-- O usuário deve poder cadastrar eventos em seu calendário com título, localização, data e horário;
-- O usuário deve poder listar os eventos cadastrados por data;
-- O usuário deve poder excluir um compromisso;
-- O usuário deve poder compartilhar um compromisso informando o e-mail do destinatário. Assim que compartilhado, o destinatário deve receber todas informações do evento por e-mail;
+  <a href="https://kalvaitir.com/">
+    <img alt="Made by Kalvaitir" src="https://img.shields.io/badge/made%20by-Kalvaitir-00A83A">
+  </a>
 
-### Requisitos não funcionais
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-00A83A">
+</p>
 
-- Utilize banco de dados SQL;
-- Utilize fila com Redis para programar o envio de e-mails do compartilhamento de compromisso;
+<p align="center">
+  <a href="#wrench-install-and-run">Install and run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#memo-license">License</a>
+</p>
 
-### Regras de negócio
+## :wrench: Install and run
 
-- O e-mail do usuário é único;
-- O usuário não pode alterar seu e-mail;
-- Não deve ser possível cadastrar dois eventos no mesmo horário no calendário de um usuário;
-- O usuário só pode ver/editar/deletar seus eventos;
-- O usuário não pode editar/deletar um evento que já passou;
-- Todos cadastros devem possuir validação de campos com mensagens legíveis;
+Open terminal:
 
-## Índice
+```sh
+# Clone this repo
+git clone https://github.com/osvaldokalvaitir/nodejs-gostack4-challenge4
 
-- [Desenvolvimento](#desenvolvimento)
+# Entry in folder
+cd nodejs-gostack4-challenge4
 
-  - [Configuração do Ambiente](#configuração-do-ambiente)
+# Install deps with npm or yarn
+npm install | yarn
 
-  - [Instalação do Projeto](#instalação-do-projeto)
-  
-  - [Configuração das Variáveis de Ambiente](#configuração-das-variáveis-de-ambiente)
+# Make a copy of the .env.example file, rename it to .env and change the variables according to your environment.
 
-  - [Execução do Projeto](#execução-do-projeto)
+# Launch the app with npm or yarn
+npm start | yarn start
 
-  - [Execução da API](#execução-da-api)
+# Run API
+adonis serve --dev
 
-  - [Execução do Ouvinte de Fila](#execução-do-ouvinte-de-fila)
+# Run queue listener
+adonis kue:listen
+```
 
-- [Utilizados no Projeto](#utilizados-no-projeto)
+Click to learn more about the tools used: [Insomnia](https://github.com/osvaldokalvaitir/awesome/blob/main/src/api-clients/insomnia/insomnia.md), [Docker](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/docker.md), [PostgreSQL Docker Image kartoza-postgis](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/images/kartoza-postgis.md), [Redis Docker Image redis:alpine](https://github.com/osvaldokalvaitir/awesome/blob/main/src/containers/docker/images/redis-alpine.md), [DBeaver](https://github.com/osvaldokalvaitir/awesome/blob/main/src/sgdbs/multiples/dbeaver.md), [Mailtrap](https://github.com/osvaldokalvaitir/awesome/blob/main/src/emails/mailtrap.md), [Sentry](https://github.com/osvaldokalvaitir/awesome/blob/main/src/errors/sentry.md).
 
-  - [Bibliotecas](#bibliotecas)
+## :memo: License
 
-  - [APIs](#apis)
-  
-  - [Ferramentas](#ferramentas)
+This project is under the MIT license. See [LICENSE](/LICENSE) for more information.
 
-## Desenvolvimento
+---
 
-### Configuração do Ambiente
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/README.md) e siga `Configuração de Ambiente`.
-
-### Instalação do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e siga `Instalação de Projeto`.
-
-### Configuração das Variáveis de Ambiente
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/dotenv.md) e siga `Configuração de Variáveis de Ambiente`.
-
-### Execução do Projeto
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/nodejs.md) e `Execução de Projeto para Produção`.
-
-### Execução da API
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga `Execução de API para Desenvolvimento` ou `Execução de API para Produção`.
-
-### Execução do Ouvinte de Fila
-
-Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md) e siga `Execução de Ouvinte de Fila`.
-
-## Utilizados no Projeto
-
-### Bibliotecas
-
-- [Adonis Antl](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-antl.md)
-
-- [Adonis Kue Provider](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/adonis-kue.md)
-
-- [Adonis Mail](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-mail.md)
-
-- [Adonis Validator](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-validator.md)
-
-- [AdonisJs Cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-cli.md)
-
-- [AdonisJs Redis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@adonisjs-redis.md)
-
-- [ESLint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint.md)
-
-- [Moment](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/moment.md)
-
-- [pg](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/pg.md)
-
-- [Raven-node](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/raven.md)
-
-### APIs
-
-- **Interna**
-
-  - **Rotas**
-
-    - Eventos
-
-      - Lista todos os eventos, podendo filtrar também por data
-      - Adiciona novos eventos
-      - Lista somente dados de um evento
-      - Edita dados de eventos existentes
-      - Exclui eventos existentes
-      - Compartilha eventos existentes
-
-    - Redefinição de Senha
-
-      - Requisita nova senha
-      - Adiciona nova senha
-
-    - Sessões
-
-      - Adiciona novas sessões
-
-    - Usuários
-
-      - Adiciona novos usuários
-      - Edita dados de usuários existentes
-
-### Ferramentas
-
-- [DBeaver](https://github.com/osvaldokalvaitir/projects-settings/blob/master/database/dbeaver.md)
-
-- [Docker](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/docker.md)
-
-  - Imagem do PostgreSQL: [kartoza-postgis](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/kartoza-postgis.md)
-
-  - Imagem do Redis: [redis:alpine](https://github.com/osvaldokalvaitir/projects-settings/blob/master/virtualization/docker/images/redis-alpine.md)
-
-- [Mailtrap](https://github.com/osvaldokalvaitir/projects-settings/blob/master/email/mailtrap.md)
-
-- [Insomnia](https://github.com/osvaldokalvaitir/projects-settings/blob/master/api-client/insomnia.md)
-
-- [Sentry](https://github.com/osvaldokalvaitir/projects-settings/blob/master/error/sentry.md)
+<p align="center">
+Developed with 💚 by <a href="https://www.linkedin.com/in/osvaldokalvaitir">Osvaldo Kalvaitir Filho</a>
+</p>
